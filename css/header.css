@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+
+    padding: 0;
+    margin:0;
+  }
+
+  @font-face{
+    font-family: 'mygont';
+    src: url('/fonts/Averta.woff');
+    font-style:normal;
+  }
+  header{
+   background:rgba(242, 235, 233, 0.6);
+   font-family: myfont;
+   transition: all 0.5s;
+ }
+ header .h-btn{
+   background: #e7332b;
+   border-radius: 0;
+ }
+
+ @media screen and (min-width:1000px){
+   header .h-btn{
+     margin-left:100px;
+   }
+ }
+
+
+
+
+ .container {
+    max-width: 1238px !important;
+    overflow: hidden !important;
+}
+
+@font-face {
+    font-family: 'myfont';
+    src: url("/fonts/Averta.woff");
+    font-style: normal;
+}
+
+header {
+    background:rgb(247 243 242);
+    font-family: myfont;
+    transition: all 0.5s;
+}
+
+.jj:hover {
+    color: #E7332B !important;
+}
+
+header .h-btn {
+    background: #E7332B;
+    border-radius: 0;
+}
+
+@media screen and (min-width: 1000px) {
+    header .h-btn {
+        margin-left: 130px;
+    }
+}
+
+
+.container {
+    max-width: 1238px;
+    overflow: hidden;
+}
+
+
+.heading-title{
+    padding: 4rem 0 7rem 0!important;
+}
+
+@media only screen and (max-width: 576px) {
+  .heading-title {
+      padding: 2rem 0 5rem 0!important;
+  }
+}
