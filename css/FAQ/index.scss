@@ -1,0 +1,103 @@
+@import './config';
+@import './main';
+@import './header';
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  // scroll-behavior: smooth;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  @include paragraph();
+  color: $fontColor;
+  font-family: Averta-Regular;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none !important;
+  color: $fontColor;
+}
+
+
+// FONT FAMILY 
+@font-face {
+  font-family: "Averta-Regular";
+  src:
+  url("/fonts/Averta.woff") format("woff"),
+  url("/fonts/Averta.otf") format("opentype"),
+}
+
+@font-face {
+  font-family: "Averta-Bold";
+  src:
+  url("/fonts/Averta-Bold.woff") format("woff"),
+  url("/fonts/Averta-Bold.otf") format("opentype"),
+}
+
+
+
+// HEADER CONTENT 
+
+.header__text {
+  width: 100%;
+  background: $SecondaryColor;
+  height: 25em;
+  max-width: 100%;
+  padding: 3rem 0rem;
+
+  p {
+    @include smallParagraph();
+    color: $primaryColor;
+    text-align: center;
+  }
+
+  h1 {
+    width: 45%;
+    @include h1();
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+// RESPONSIVENESS 
+@include mediaLg {
+  
+  
+}
+
+@include mediaSm {
+  .header__text {
+    padding: 1rem 0rem;
+
+    h1 {
+      width: 60%;
+    }
+  }
+  
+}
+
+@include mediaXm {
+  
+  .header__text {
+    padding: 3rem 0rem;
+
+    h1 {
+      width: 70%;
+    }
+  }
+  
+}
+
+.container {
+  max-width: 1238px !important;
+  overflow: hidden !important; 
+}
