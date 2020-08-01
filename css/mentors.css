@@ -381,9 +381,9 @@ header {
 /* media queries */
 
 @media (max-width: 767px) {
-  /* .headerP2 {
+  .headerP2 {
     font-size: 18px;
-  } */
+  }
   .mentor-intro {
     height: 180px;
   }
